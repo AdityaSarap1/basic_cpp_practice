@@ -1,0 +1,48 @@
+//armstrong numbers
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+    int lastDigit, n, armsum=0;
+    cin>>n;
+    int ogn=n;
+    while(n>0)
+    {
+        lastDigit=n%10;
+        armsum=pow(lastDigit,3)+armsum;
+        n=n/10;
+        
+    }
+    if(ogn==armsum)
+    {
+        cout<<"The given number is an armstrong number";
+    }
+    else{
+        cout<<"The number is not armstrong number";
+    }
+    return 0;
+    
+}
+
+
+
+
+sum of cubes of every single digit of given number is equal to that number itself
+
+
+/*output
+/tmp/c778Qi4gNg.o
+123
+The number is not armstrong number
+
+=== Code Execution Successful ===
+
+
+
+
+/tmp/hTxJJyf9f1.o
+153
+The given number is an armstrong number
+
+=== Code Execution Successful === */

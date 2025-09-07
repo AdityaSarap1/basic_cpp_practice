@@ -1,0 +1,16 @@
+//sum of all digits in a number
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n, sum=0, lastdigit;
+    cin>>n;
+    while(n>0)
+    {
+        lastdigit = n%10;
+        sum += lastdigit;
+        n/=10;
+    }
+    cout<<sum;
+    return 0;
+}

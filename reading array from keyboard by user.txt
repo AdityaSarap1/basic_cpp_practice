@@ -1,0 +1,18 @@
+//reading array from keyboard by user and printing by for each loop
+#include<iostream>
+using namespace std;
+int main()
+{
+    int array[5], i;
+    //for each loop
+    for(i=0; i<5; i++)
+    {
+        cin>>array[i];
+        
+    }
+    for(int ele: array)
+    {
+        cout<<ele<<endl;
+    }
+    return 0;
+}

@@ -1,0 +1,23 @@
+// Running sum or prefix sum of an array by making another array
+#include <iostream>
+using namespace std;
+
+int main() {
+    int arr[5]={2,4,6,8,9};
+    int ansarr[5];
+    int sum=0;
+    for(int i=0; i<5; i++)
+    {
+        for(int j=i; j>=0; j--)
+        {
+            sum += arr[j];
+        }
+        ansarr[i]=sum;
+    }   
+    for(int i=0; i<5; i++)
+    {
+        cout<<ansarr[i]<<" "; 
+    }
+    
+    return 0;
+}

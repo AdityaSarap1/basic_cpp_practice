@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a, b, temp;
+    cout<<"Emter a: ";
+    cin>>a;
+    cout<<"Emter b: ";
+    cin>>b;
+    temp = b;
+    b = a;
+    a = temp;
+    cout<<"the two numbers have been swapped"<<endl;
+    cout<<"now a is "<<a<<endl;
+    cout<<"now b is "<<b<<endl;
+    return 0;
+    
+}

@@ -1,0 +1,34 @@
+//second largest number in an array
+#include<iostream>
+using namespace std;
+int indexLargest(int arr[], int size)
+{
+    int largest=arr[0];
+    int maxIndex=-1;
+    for(int i=0; i<size; i++)
+    {
+        if(arr[i]>largest)
+        {
+            largest=arr[i];
+            maxIndex=i;
+        }
+    }
+    return maxIndex;
+}
+
+int main()
+{
+    int array[]={1,2,3,45,6,67,7};
+    int size=sizeof(array)/sizeof(array[1]);
+    int largestIndex=indexLargest(array, size);
+    array[largestIndex]=0;
+    int secondLargest=indexLargest(array, size);
+    cout<<secondLargest;
+    
+        
+        
+       
+    
+    return 0;
+
+}

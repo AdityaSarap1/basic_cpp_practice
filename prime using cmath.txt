@@ -1,0 +1,32 @@
+//prime using cmath
+#include<iostream>
+#include<cmath>
+
+using namespace std;
+int prime(int n)
+{
+    int i;
+    for(i=2; i<sqrt(n); i++)
+    {
+        
+        if(n%i==0)
+        {
+            cout<<"The number is not prime.";
+            break;
+            
+        }
+        else{
+            cout<<"The number is Prime.";
+            break;
+        }
+    }
+    return 0;
+}
+int main()
+{
+    int num;
+    cout<<"Enter the number to check whether it is prime or not: ";
+    cin>>num;
+    prime(num);
+    return 0;
+}

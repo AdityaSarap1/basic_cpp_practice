@@ -1,0 +1,46 @@
+//sort 0 and 1
+#include<iostream>
+#include<vector>
+using namespace std;
+
+void sortZerosandOnes(vector<int>&vect)
+{
+    int zeros=0;
+    for(int i=0; i<vect.size(); i++)
+    {
+        if(vect[i]==0)
+        {
+            zeros++;
+        }
+    
+    }
+    for(int i=0; i<vect.size(); i++)
+    {
+        if(i<zeros)
+        {
+            vect[i]=0;
+        }
+        else{
+            vect[i]=1;
+        }
+    }
+}
+int main()
+{
+    int n;
+    cin>>n;
+    vector<int>vect(n);
+    for(int i=0; i<n; i++)
+    {
+        int ele;
+        cin>>ele;
+        vect.push_back(ele);
+    }
+    sortZerosandOnes(vect);
+    for(int i=0; i<n; i++)
+    
+    {
+        cout<<vect[i];
+    }
+    return 0;
+}

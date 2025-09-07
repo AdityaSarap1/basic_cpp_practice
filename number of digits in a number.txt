@@ -1,0 +1,18 @@
+//number of digits in a number
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i, num, store;
+    
+    cout<<"Enter you number: ";
+    cin>>num;
+    store = 0;
+    while(num>0)
+    {
+        num = num/10;
+        store++;
+    }
+    cout<<store;
+    return 0;
+}

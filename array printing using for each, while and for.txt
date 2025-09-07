@@ -1,0 +1,36 @@
+//reading array from keyboard by user and printing by for each loop
+#include<iostream>
+using namespace std;
+int main()
+{
+    int array[5], i;
+    
+    for(i=0; i<5; i++)
+    {
+        cin>>array[i];
+        
+    }
+    //printing by for each loop
+    for(int ele: array)
+    {
+        cout<<ele<<endl;
+    }
+    //printing by for loop
+    int sizeOfArray = sizeof(array)/sizeof(array[0]);
+    cout<<sizeOfArray<<endl;
+    for(int j=0; j<sizeOfArray; j++)
+    {
+        cout<<array[j]<<endl;
+        
+    }
+    
+    //printing using while loop
+    int index=0;
+    while((index)<(sizeOfArray))
+    {
+        
+        cout<<array[index]<<endl;
+        index++;
+    }
+    return 0;
+}

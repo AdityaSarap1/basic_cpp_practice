@@ -1,0 +1,32 @@
+//sort 0 and 1 using two pointers concept
+#include<iostream>
+#include<vector>
+
+twoPointerSwap(vector<int>&v){
+    left_pt=0;
+    right_pt=1;
+    while(left_pt<right_pt)
+    {
+        
+    }
+}
+int main()
+{
+    int n;
+    cin>>n;
+    
+    vector<int>v;
+    for(int i=0; i<n; i++)
+    {
+        int ele;
+        cin>>ele;
+        v.pushback(ele);
+    }
+    
+    twoPointerSwap(v);
+    for(int i=0; i<n; i++)
+    {
+        cout<<v[i];
+    }
+    return 0;
+}

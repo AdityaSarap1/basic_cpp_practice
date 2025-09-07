@@ -1,0 +1,26 @@
+//rotatinf an array by k steps
+#include<iostream>
+using namespace std;
+int main()
+{
+    int arr[]={9,23,4,45,5,3};
+    int size=6;
+    int k=3;
+    
+    int ans[size];
+    int j=0;
+    for(int i=size-k; i<size; i++)
+    {
+        ans[j++]=arr[i];
+    }
+    for(int i=0; i<=k; i++)
+    {
+        ans[j++]=arr[i];
+    }
+    for(int i=0; i<size; i++)
+    {
+        cout<<ans[i]<<" ";
+    }
+    cout<<endl;
+    return 0;
+}

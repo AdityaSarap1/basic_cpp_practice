@@ -1,0 +1,23 @@
+//factorial
+#include<iostream>
+using namespace std;
+
+int fact(int n)
+{
+    int initial=1;
+    for(int i=2; i<=n; i++)
+    {
+        initial=initial*i;
+        
+    }
+    return initial;
+}
+
+int main()
+{
+    cout<<"Enter your number: "<<endl;
+    int n;
+    cin>>n;
+    int ans=fact(n);
+    cout<<ans<<endl;
+}

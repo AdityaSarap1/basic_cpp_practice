@@ -1,0 +1,30 @@
+//rhombus pattern
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i, j, n;
+    cin>>n;
+    for(i=1; i<=n; i++)
+    {
+        for(j=1; j<=(n-i+1); j++)
+        {
+            cout<<" ";
+        }
+        for(j=(n-i+1); j<=(n-i+1)+2*n; j+=2)
+        {
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+    return 0;
+}/tmp/F5g574uOFh.o
+5
+     ******
+    ******
+   ******
+  ******
+ ******
+
+
+=== Code Execution Successful ===

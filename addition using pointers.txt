@@ -1,0 +1,14 @@
+//addition using pointers
+#include <iostream>
+using namespace std;
+int main() {
+    int x, y;
+    cin>>x>>y;
+    int *ptrx=&x;
+    int *ptry=&y;
+    int result;
+    int *ptrr=&result;
+    *ptrr=*ptrx+*ptry;
+    cout<<result<<" "<<*ptrr<<" "<<ptrr;
+    return 0;
+}

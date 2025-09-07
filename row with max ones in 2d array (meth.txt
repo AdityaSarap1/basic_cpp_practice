@@ -1,0 +1,41 @@
+//row with max ones in 2d array (method 2)
+#include<iostream>
+#include<vector>
+using namespace std;
+int leftMostOnesRow(vector<vector<int> >&v){
+    int leftMostOne;
+    int maxOnesRow;
+    int j=v[0].size()-1;
+    while(j>0 && v[0][j]==1){
+        int leftMostOne=j;
+        maxOnesRow=0;
+        j--;
+    }
+    for(int i=1; i<v.size(); i++){
+        while(int j>0 && v[i][j]==1){
+            if(j>leftMostOne){
+                leftMostOne=j;
+                maxOnesRow=i;
+                j--;
+            }
+            
+        }
+    }
+    return maxOnesRow;
+    
+}
+
+int main()
+{
+    int r, m;
+    cin>>r>>m;
+    vector<vector<int> >vec(r, vector<int>(m));
+    for(int i=0; i<r; i++){
+        for(int j=0; j<m; j++){
+            cin>>vec[i][j];
+        }
+    }
+    int res = leftMostOnesRow(vec);
+    cout<<"the max ones row is "<<res;
+    return 0;
+}

@@ -1,0 +1,28 @@
+//LAST OCCURENCE OF AN ELEMENT IN A VECTOR
+#include<iostream>
+#include<vector>
+using namespace std;
+int main()
+{
+    vector<int>vect(6);
+    for(int i=1; i<=6; i++)
+    {
+        cin>>vect[i];
+    }
+    int key;
+    cout<<"Enter value of key";
+    cin>>key;
+    int occurence=-1;
+    for(int j=0; j<vect.size(); j++)
+    {
+        if(vect[j]==key)
+        {
+            occurence=j;
+        }
+    }
+    
+    cout<<occurence;
+
+    
+    return 0;
+}
